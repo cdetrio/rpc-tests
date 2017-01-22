@@ -1,4 +1,4 @@
-REPORTER = spec
+REPORTER = json
 
 MOCHA = @./node_modules/mocha/bin/mocha --reporter $(REPORTER)
 
