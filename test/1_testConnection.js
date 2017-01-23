@@ -18,6 +18,7 @@ if(useIpc) {
             Helpers.send(host);
 
         } catch(e) {
+            console.log('Helpers.eachHost error:', e);
             // remove offline host from config
             delete config.hosts[Helpers.getKeyByValue(config.hosts, host)];
 
