@@ -1,6 +1,6 @@
 REPORTER = json
 
-MOCHA = @./node_modules/mocha/bin/mocha --reporter $(REPORTER)
+MOCHA = @./node_modules/mocha/bin/mocha --reporter $(REPORTER) > results.json
 
 test:
 	$(MOCHA) test/*.js
